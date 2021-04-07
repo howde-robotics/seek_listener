@@ -24,7 +24,7 @@ void SeekListener::temperatureDataCallback(const sensor_msgs::ImageConstPtr& msg
 
 }
 
-void SeekListener::telemetryDataCallback(const seek_driver::telemetryDataConstPtr& msg)
+void SeekListener::telemetryDataCallback(const dragoon_messages::telemetryDataConstPtr& msg)
 {
   float env_temp = msg->env_temp;
   unsigned int field_count = msg->field_count;

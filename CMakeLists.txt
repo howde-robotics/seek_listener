@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   seek_driver
+  dragoon_messages
 )
 
 ## System dependencies are found with CMake's conventions
@@ -110,7 +111,7 @@ catkin_package(
 #  LIBRARIES seek_listener
  CATKIN_DEPENDS 
   cv_bridge image_transport roscpp sensor_msgs std_msgs
-  sensor_msgs
+  sensor_msgs dragoon_messages
 #  DEPENDS system_lib
 )
 
