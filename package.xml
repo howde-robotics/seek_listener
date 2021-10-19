@@ -65,6 +65,7 @@
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <depend>dragoon_messages</depend>
+  <depend>seek_driver</depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

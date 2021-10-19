@@ -12,7 +12,7 @@
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
 
-#include "dragoon_messages/telemetryData.h"
+#include "seek_driver/telemetryData.h"
 
 // Include other header files
 #include <opencv2/opencv.hpp>
@@ -34,7 +34,7 @@ private:
   void displayDataCallback(const sensor_msgs::ImageConstPtr& msg);
   void temperatureDataCallback(const sensor_msgs::ImageConstPtr& msg);
   void filteredDataCallback(const sensor_msgs::ImageConstPtr& msg);
-  void telemetryDataCallback(const dragoon_messages::telemetryDataConstPtr& msg);
+  void telemetryDataCallback(const seek_driver::telemetryDataConstPtr& msg);
 
   // ROS and node related variables
   ros::NodeHandle nh_, private_nh_;
